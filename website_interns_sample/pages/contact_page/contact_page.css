@@ -1,0 +1,83 @@
+html {
+    font-family: poppins;
+}
+
+.contactContainer {
+    max-width: 600px;
+    margin: 150px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contactContainer .contactHeading {
+    margin-bottom: 10px;
+}
+
+.contactInfo {
+    margin-top: 20px;
+}
+
+.contactInfo .contactParagraph {
+    margin-bottom: 5px;
+}
+
+.registrationForm {
+    margin-top: 20px;
+}
+
+.registrationForm label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.registrationForm input,
+.registrationForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.registrationForm .submitButton {
+    background-color: #ea1f23;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contactDetails {
+    display: none; 
+    margin-top: 20px;
+}
+
+.contactDetails .contactHeading {
+    margin-bottom: 10px;
+}
+
+.contactLinks {
+    margin-top: 10px;
+}
+
+.contactLinks .links {
+    display: inline-block;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+}
+
+.contactLinks .links:hover {
+    background-color: #e0e0e0;
+}

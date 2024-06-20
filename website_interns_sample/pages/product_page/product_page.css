@@ -1,0 +1,118 @@
+html {
+    font-family: poppins;
+}
+
+.star-rating {
+    display: inline-block;
+}
+
+.star {
+    font-size: 2em;
+    color: lightgray;
+    cursor: pointer;
+}
+
+.star.hovered,
+.star.selected {
+    color: gold;
+}
+
+.shopingCartSection {
+    display: flex;
+    gap: 50px;
+    margin-left: 80px;
+    padding-top: 150px;
+}
+
+.productDetailsContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.productHeading {
+    white-space: pre-line;
+}
+
+.priceParagraph {
+    color: #ea1f23;
+}
+
+.productParagraph {
+    white-space: pre-line;
+}
+
+.span {
+    font-weight: lighter;
+}
+
+.plusMinusContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    border: 1px solid #cecece;
+    width: 82.16px;
+    height: 52px;
+}
+
+.plusMinusButton {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.orderButtonContainer {
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.addToCartButton {
+    width: 370px;
+    height: 52px;
+    background-color: #ea1f23;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.heartButtonIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #cecece;
+    width: 57.19px;
+    height: 52px;
+    border-radius: 5px;
+}
+
+@media (min-width: 300px) and (max-width: 650px) {
+    .shopingCartSection {
+        flex-direction: column;
+        margin: 0;
+    }
+    .addToCartButton {
+        width: 100px;
+    }
+    .image {
+        width: 200px;
+    }
+    .imageDetails {
+        width: 50px;
+    }
+}
+@media (min-width: 650px) and (max-width: 900px){
+    .shopingCartSection {
+        flex-direction: column;
+        margin: 0;
+        
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1300px) {
+    .shopingCartSection {
+        flex-direction: column;
+         
+    }
+}

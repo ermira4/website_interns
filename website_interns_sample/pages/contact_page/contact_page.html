@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../contact_page/contact_page.css"/>
+    <link rel="stylesheet" href="../../components/header/header.css"/>
+    <script src="../../components/header/header.js"></script>
+    <script src="../../components/header/header_burger_menu.js"></script>
+    <link rel="stylesheet" href="../../components/footer/footer.css"/>
+    <script src="../../components/footer/footer.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <my-header></my-header>
+    <div class="contactContainer">
+        <div class="contactInfo">
+            <h3 class="contactHeading">Kontakti</h3>
+            <p class="contactParagraph">Rr.Ukshin Hoti, #33, Prishtinë, Kosovë</p>
+            <p class="contactParagraph">Email: <span id="email">info@kujtesa.com</span></p>
+            <p class="contactParagraph">Phone: <span id="phone">038400400, 080040040</span></p>
+        </div>
+
+        <div class="registrationForm" id="registrationForm">
+            <h3 class="contactHeading">Registration Form</h3>
+            <form>
+                <label for="nameInput">Name:</label>
+                <input type="text" id="nameInput" name="nameInput" required>
+                
+                <label for="emailInput">Email:</label>
+                <input type="email" id="emailInput" name="emailInput" required>
+                
+                <label for="messageInput">Message:</label>
+                <textarea id="messageInput" name="messageInput" rows="5" required></textarea>
+                
+                <button type="submit" class="submitButton">Submit</button>
+            </form>
+        </div>
+
+        <div class="contactDetails" id="contactDetails">
+            <h3 class="contactHeading">Contact Details</h3>
+            <p class="contactParagraph">Thank you for registering, <span id="userName"></span>!</p>
+            <p class="contactParagraph">You can contact us at:</p>
+            <div class="contactLinks">
+                <a href="mailto:info@kujtesa.com" class="links">Email Us</a>
+                <a href="tel:+38338400400" class="links">Call 038400400</a>
+                <a href="tel:+38380040040" class="links">Call 080040040</a>
+            </div>
+        </div>
+    </div>
+     <my-footer></my-footer>
+    <script src="../contact_page/contact_page.js"></script>
+</body>
+</html>

@@ -1,0 +1,463 @@
+html {
+    font-family: poppins;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.backgroundPictures {
+   width: 100%;
+    padding-top: 30px;
+}
+
+
+
+.descriptionOnPicture {
+    margin-top: -27%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   color: #fff;
+   z-index: 50;
+}
+
+.heading {
+    white-space: pre-line;
+    text-align: center;
+    font-size: 2.3rem;
+}
+
+.paragraph {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.loremIspumLeftButton {
+    width: 182px;
+    height: 52px;
+    color: #003049;
+    border-radius: 4px;
+    margin-top: 30px;
+}
+
+.loremIspumRightButton {
+    background-color: transparent;
+    color: #fff;
+    width: 182px;
+    height: 52px;
+    border-radius: 4px;
+    border: 1px solid #fff;
+}
+
+.pictureAndDescription {
+  display: flex;
+  align-items: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 10%;
+  gap: 50px;
+}
+ 
+.portraitParagraph {
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+}
+
+.authorPortrait {
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.whyOurProductsSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+   padding: 50px;
+   background-color: #a6a6b0;
+   width: 100vw;
+   margin-top: 50px;
+   gap: 100px;
+   width: 93%;
+
+}
+
+.whyOurProductsHeading {
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 3.5rem;
+    color: #292c33;
+}
+
+.materialsParagraph {
+    margin-right: 100px;
+    color: #0b0b0b;
+}
+
+.ourProductsHeading {
+    color: #292c33;
+}
+
+.ourProductsParagraph {
+    color: #0b0b0b;
+}
+
+.groupIcon {
+    display: flex;
+    gap: 30px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.sliderImg {
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden; 
+}
+
+.wrapper {
+    position: relative;
+    overflow: hidden; 
+}
+
+.carousel {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    transition: transform 0.5s ease; 
+}
+
+.carousel li {
+    flex: 0 0 calc(100% / 3); 
+    box-sizing: border-box;
+    padding: 0 10px; 
+    text-align: center;
+}
+
+.carousel li .card {
+    border: 1px solid #ccc; 
+    padding: 10px;
+    margin: 20px;
+    min-width: calc(100% / 3); 
+}
+
+.carousel li img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1; 
+}
+
+#prevBtn {
+    left: 0;
+}
+
+#nextBtn  {
+    right: 0;
+}
+
+.buttonImg {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.vectorHeartIcon {
+    background-color: #a6a6b0;
+    padding: 5px;
+}
+
+.ourCollectionContainer {
+    display: grid;
+   grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.firstPaitingDescription {
+    display: flex;
+    flex-direction: column;
+    width: 326px;
+    align-items: flex-end;
+    margin-left: 200px;
+}
+
+.description {
+    white-space: pre-line;
+    
+}
+
+.secondPaitingDescription {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-top: 50px;
+}
+
+.thirdPaitingDescription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+    margin-right: 200px;
+}
+
+.authorName {
+    margin-bottom: -30px;
+    z-index: 5;
+}
+
+.ourCollectionSection {
+    background-color: #132a3c;
+    color: #fff;
+    padding-bottom: 100px;
+}
+
+.ourCollectionHeading {
+    font-size: 4rem;
+    font-family: "Playwrite FR Moderne";
+    font-weight: lighter;
+    white-space: pre-line;
+    margin: 10px 50%;
+}
+
+.seeAllCollectionButton {
+    width: 230px;
+    height: 62px;
+    margin-top: 100px;
+    background-color: transparent;
+    border-color: #fff;
+    color: #fff;
+}
+
+.teamImgContainer {
+    display: flex;
+    gap: 10px;
+    margin-top: 15%;
+    margin-left: 100px;
+}
+
+.teamImg2 {
+   margin-left: -350px; 
+   margin-top: 470px;
+   
+}
+
+.teamImg3 {
+    margin-top: -50px;
+}
+
+.creativeTeamHeading {
+   white-space: pre-line;
+   font-size: 4rem;
+   font-family: "Playwrite FR Moderne";
+   font-weight: lighter;
+   margin-top: -12%;
+   margin-left: -50px;   
+}
+.responsiveButton {
+    display: none;
+}
+
+
+
+
+
+@media (min-width: 300px) and (max-width: 600px) {
+    .heading, .paragraph{
+        font-size: 5px;
+    }
+    .loremIspumLeftButton, .loremIspumRightButton {
+        margin-top: 5px;
+        width: 100px;
+        height: 20px;
+    }
+    .pictureAndDescription {
+        flex-direction: column;
+        margin-left: 5px;
+        margin-right: 5px;
+        gap: 0;
+    }
+    .imgResponsive {
+        width: 200px;
+    }
+    .whyOurProductsSection {
+           flex-direction: column;
+           padding: 0;
+           gap: 5px;
+    }
+   .groupIconScroll {
+    overflow-x: scroll;
+   }
+   .groupIcon {
+    margin: 0;
+    gap: 2px;
+   }
+  
+    .buttonImg {
+        width: 200px;
+    }
+    .whyOurProductsHeading {
+        font-size: 20px;    }
+    
+
+    .carousel li {
+        flex: 0 0 100%; 
+        padding: 0 5px; 
+    }
+
+    .carousel li .card {
+        min-width: 100%; 
+    }
+    .ourCollectionHeading, .creativeTeamHeading {
+        margin: 0;
+        font-size: 10px;
+    }
+    .ourCollectionContainer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .firstPaitingDescription, .secondPaitingDescription, .thirdPaitingDescription {
+        margin: 0;
+        width: 200px;
+        padding: 0;
+     
+    }
+    .seeAllCollectionButton {
+        display: none;
+    }
+    .responsiveButton  {
+        display: block;
+    }
+    .teamImgContainer {
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+    .teamImg2, .teamImg3 {
+        margin: 0;
+    }
+    .pictureAndDescription {
+        margin-top: 20%;
+    }
+   
+}
+@media (min-width: 600px) and (max-width: 900px) {
+    .heading, .paragraph{
+        font-size: 10px;
+    }
+    .loremIspumLeftButton, .loremIspumRightButton {
+        margin-top: 5px;
+        width: 100px;
+        height: 20px;
+    }
+    .pictureAndDescription {
+        flex-direction: column;
+        margin-left: 5px;
+        margin-right: 5px;
+        gap: 0;
+    }
+    .whyOurProductsSection {
+        flex-direction: column;
+        padding: 0;
+        gap: 5px;
+ }
+ .groupIconScroll {
+    overflow-x: scroll;
+   }
+   .buttonImg {
+    width: 300px;
+}
+
+
+.carousel li {
+    flex: 0 0 100%; 
+    padding: 0 5px; 
+}
+
+.carousel li .card {
+    min-width: 100%; 
+}
+.ourCollectionContainer {
+    grid-template-columns: repeat(1, 1fr);
+}
+.seeAllCollectionButton {
+    display: none;
+}
+.responsiveButton  {
+    display: block;
+}
+.teamImgContainer {
+    flex-direction: column-reverse;
+    margin: 0;
+}
+.teamImg2, .teamImg3 {
+    margin: 0;
+}
+.ourCollectionHeading, .creativeTeamHeading{
+    margin: 0;
+    font-size: 20px;
+}
+.firstPaitingDescription, .secondPaitingDescription, .thirdPaitingDescription {
+    margin: 0;
+}
+.pictureAndDescription {
+    margin-top: 20%;
+}
+
+}
+
+@media (min-width: 900px) and (max-width: 1250px) {
+    .whyOurProductsSection {
+        flex-direction: column;
+        padding: 0;
+        gap: 5px;
+ }
+ .groupIconScroll {
+    overflow-x: scroll;
+   }
+   .heading, .paragraph{
+    font-size: 20px;
+}
+.loremIspumLeftButton, .loremIspumRightButton {
+    margin-top: 5px;
+    width: 100px;
+    height: 20px;
+}
+.ourCollectionContainer {
+    grid-template-columns: repeat(1, 1fr);
+}
+.seeAllCollectionButton {
+    display: none;
+}
+.responsiveButton  {
+    display: block;
+}
+.teamImgContainer {
+    flex-direction: column-reverse;
+    margin: 0;
+}
+.teamImg2, .teamImg3, .creativeTeamHeading {
+    margin: 0;
+}
+.pictureAndDescription {
+    margin-top: 15%;
+}
+
+
+}
+
+   
+
+
+ 

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../product_page/product_page.css" />
+    <script src="../../pages/product_page/product_page.js"></script>
+    <script src="../../assets/components_pages/shopping_cart_page.js"></script>
+    <link rel="stylesheet" href="../../components/header/header.css"/>
+    <script src="../../components/header/header.js"></script>
+    <script src="../../components/header/header_burger_menu.js"></script>
+    <link rel="stylesheet" href="../../components/footer/footer.css"/>
+    <script src="../../components/footer/footer.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <my-header></my-header>
+    <section class="shopingCartSection">
+        <div>
+            <img src="../../assets/pictures/cctv_img.jpg" class="image"/>
+            <div>
+                <img src="../../assets/pictures/cctv_img.jpg" width="150px" class="imageDetails"/>
+                <img src="../../assets/pictures/cctv_img.jpg" width="150px" class="imageDetails"/>
+                <img src="../../assets/pictures/cctv_img.jpg" width="150px" class="imageDetails"/>
+                <img src="../../assets/pictures/cctv_img.jpg" width="150px" class="imageDetails"/>
+            </div>
+        </div>
+        <div class="productDetailsContainer">
+            <div>
+                <h1 class="productHeading">
+                    HEAT WAVE Sirona 3-Person 
+                    Hemlock Infrared Sauna with 8 
+                    Carbon Heaters
+                </h1>
+            </div>
+            <div class="star-rating">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            </div>
+            <div>
+                <h2 class="priceParagraph">450.00€</h2>
+            </div>
+            <div>
+                <p class="productParagraph">8 Carbon heaters; 2175 watts; operates up to 141 degrees F 
+                    Commercial grade Infrawave technology heater panels for energy-
+                    efficient, ultra-low EMF Rich mahogany melamine engineered wood 
+                    exterior panels laminated to "A” grade reforested western 
+                    Canadian hemlock interior - thick walls</p>
+            </div>
+            <div>
+                <h4>Availability: <span class="span">In Stock</span></h4>
+                <h4>Categories: <span class="span">Sauna Bath</span> </h4>
+                <h4>Product Tags: <span class="span">Tag1, Tag2, Tag3</span></h4>
+            </div>
+           <div class="orderButtonContainer">
+            <div class="plusMinusContainer">
+                <button class="plusMinusButton plusButton">+</button>
+                <p id="quantity">1</p>
+                <button class="plusMinusButton minusButton">-</button>
+            </div>
+            <div>
+                <button class="addToCartButton">ADD TO CART</button>
+            </div>
+            <div class="heartButtonIcon">
+                <vector-heart-icon></vector-heart-icon>
+            </div>
+           </div>
+           <div class="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cartItems"></ul>
+        </div>
+    </section>
+    <my-footer></my-footer>
+    <script src="../shoping_cart_page/shoping_cart.js"></script>
+</body>
+
+</html>

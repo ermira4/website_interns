@@ -1,0 +1,26 @@
+footer {
+    padding: 20px;
+    background-color: #707070;
+    margin-top: 50px;
+}
+
+.footerSection {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.line {
+    border: 1px solid #000;
+    margin: 20px 70px;
+}
+
+.footerHeading, .copyrightHeading {
+    margin-left: 70px;
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+    .footerSection {
+        flex-direction: column;
+
+    }
+}

@@ -1,0 +1,136 @@
+html{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #132a3c;
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+    color: #fff;
+    position: fixed;
+   width: 100%;
+   top: 0;
+   left: 0;  
+   height: 88px;  
+   z-index: 99;
+}
+
+
+.logoHeading {
+    font-size: 1.7rem;
+    text-align: center;
+    margin-left: 100px;
+}
+
+nav>.navList {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.navBarSvg {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-right: 50px;
+}
+
+
+.burgerMenu {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.burgerIcon {
+    display: inline;
+}
+
+.closeIcon {
+    display: none;
+}
+
+
+.sideBar {
+    display: none;
+    position: fixed;
+    top: 88px; 
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #132a3c;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    z-index: 100;
+}
+
+.sideBar.active {
+    display: flex;
+    flex-direction: column;
+}
+
+.sideBar .navList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sideBar .navList li {
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    color: rgb(222, 22, 22);
+}
+
+
+
+@media (min-width: 300px) and (max-width: 750px) {
+    .burgerMenu {
+        display: block;
+    }
+
+    .burgerMenu .burgerIcon {
+        display: inline;
+    }
+
+    .burgerMenu .closeIcon {
+        display: none;
+    }
+
+    .burgerMenu.active .burgerIcon {
+        display: none;
+    }
+
+    .burgerMenu.active .closeIcon {
+        display: inline;
+    }
+    .hideMenu {
+        display: none;
+    }
+    .logoHeading {
+        margin: 0;
+    }
+}
+
+
